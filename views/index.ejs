@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_signup">
+        <% if (UserError) { %>
+            <p class="error"><%= UserError.message %></p>
+        <% } %> 
+        <h2>want us to send you <br>on your birthdays?</h2>
+        <form action="/register" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" value=""><br>
+            <label for="name">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com"><br>
+            <label for="DOB">Date of birth:</label><br>
+            <input type="date" id="DOB" name="DOB"><br><br>
+            <input type="submit" value="Submit">
+          </form><br><br>
+          <a href="mailto: obayorit@gmail.com" style="text-decoration: none;" onMouseOver="this.style.color='#ff8800'" onMouseOut="this.style.color='#00F'">Contact us</a>
+    </div>
+</body>
+</html>

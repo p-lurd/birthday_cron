@@ -1,0 +1,270 @@
+
+
+input[type="submit"] {
+  background-color: #0a3170;
+  color: white;
+}
+  .task-form {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .task-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .center {
+    text-align:center;
+  }
+
+
+  /* for dashboard */
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  /* .center {
+    text-align: center;
+  } */
+  body{
+    
+      background-color: #0a3170;
+      opacity: 1;
+      /* background-image: url('https://i.ibb.co/r3XysYD/birthday-cake.png'); */
+      background-image: url(background.svg);
+      background-repeat: repeat;
+      /* max-width: fit-content; */
+      max-width: 100%;
+  }
+ 
+  .overall{
+    display: flex;
+    justify-content: center;
+  }
+  .main{
+    background-color: white;
+    padding: 10px;
+    width:fit-content;
+    min-width: 70%;
+    height: auto;
+     /* height:fit-content; */
+    margin: auto;
+
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+   
+  
+  }
+  .status_change{
+      padding: 3px;
+      width: 50px;
+  }
+  .status{
+    max-width: 8px;
+  }
+  .button{
+    width: 80px;
+  }
+
+
+
+  .main_index{
+    background-color: #f2f2f2;
+      max-width: 70%;
+      height:auto;
+      margin: auto;
+      width: 70%;
+      padding: 70px 10px;
+      border-radius: 10px;
+    margin-top: 90px;
+    font-size: large;
+    color: #0a3170;
+  }
+  .main_index > a{
+    border: 5px solid #0a3170;
+    color: white;
+    background-color: #0a3170;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .main_signup{
+    background-color: #f2f2f2;
+      max-width: 70%;
+      height:auto;
+      margin: auto;
+      width: 20%;
+      padding: 40px 10px;
+      border-radius: 10px;
+    margin-top: 150px;
+    font-size: large;
+    color: #0a3170;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .error{
+    color: rgb(235, 11, 11);
+    font-size: small;
+    background-color: rgb(237, 230, 230);
+    padding: 0 2px;
+  }
+  .special_links{
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #0a3170;
+    padding: 2px 5px;
+    border-radius: 8px;
+  }
+  .addTask{
+    font-size: 15px;
+  }
+
+
+  
+
+
+
+
+  .logout{
+    font-size: medium;
+    padding: 4px;
+    border: 5px solid #0a3170;
+    color: white;
+    text-decoration: none;
+    background-color: #0a3170;
+   border-radius: 8px;
+  }
+
+
+  /* for postTask */
+  .main_post{
+    background-color: #f2f2f2;
+      
+      height:auto;
+      width: 80%;
+      margin: auto;
+     
+      /* padding: 70px 20px; */
+      border-radius: 10px;
+    margin-top: 150px;
+    font-size: large;
+    color: #0a3170;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonAdd{
+    background-color: #0a3170;
+    color: white;
+  }
+.logout_post{
+    font-size: medium;
+    padding: 4px;
+    border: 5px solid white;
+    color: #0a3170;
+    text-decoration: none;
+    background-color: white;
+   border-radius: 8px;
+   position: absolute;
+   top: 5%;
+  left: 90%;
+}
+
+.post_task{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-form > input{
+  height: 100px;
+}
+
+#to_do {
+  width: 100%; /* adjust the width as needed */
+  padding: 70px 40px 70px 20px; /* Increase the padding for more height */
+  font-size: 1.2rem; /* Increase the font size for better visibility */
+}
+.center{
+  margin-left: 20px;
+}
+
+
+
+
+
+/* additionals for dashboard */
+#statusFilter{
+  color: #0a3170;
+}
+.tbody, .status_change, .center, .blue{
+  color: #0a3170;
+}
+.status_change > label,input{
+  color: #0a3170;
+}
+
+/* for media queries */
+@media (max-width: 992px) {
+  .main_signup{
+    width: 100%;
+  }
+  .overall{
+    width: 100%;
+  }
+  .main{
+    width: 100%;
+    border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height:fit-content;
+  padding: 50px 30px;
+  }
+  .overallPost{
+    width: 100%;
+    border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height:fit-content;
+  padding: 50px 30px;
+  background-color: #f2f2f2;
+  }
+  .logout_post{
+    border: 10px solid #0a3170;
+  color: white;
+  background-color: #0a3170;
+  }
+  .main_post{
+    margin-top: auto;
+  }
+}
+.main_signup >a {
+  hover {
+    color: #ff8800 !important;
+  }
+  text-decoration: none;
+}
