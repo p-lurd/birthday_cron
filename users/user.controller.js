@@ -1,5 +1,4 @@
 const UserModel = require('../models/user');
-const cookieParser = require('cookie-parser');
 
 
 const createUser = async (req, res, next)=>{

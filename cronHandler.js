@@ -7,7 +7,7 @@ const db = require('./db/index')
 
 db.connect();
 
-
+const sendBirthday = async ()=>{
     try {
       cron.scheduleJob('0 7 * * *', async () => {
         const today = new Date();
@@ -36,9 +36,8 @@ db.connect();
         logger.info('All emails have been sent')
       });
     } catch (error) {
-      console.log(error.message);
         logger.info('error sending => in cron handler', error);
     }
+  }
 
-
-// module.exports = sendBirthday;
+module.exports = sendBirthday;

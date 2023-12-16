@@ -12,7 +12,6 @@ const validateUserCreation = async (req, res, next)=>{
             DOB: joi.date().required()
         })
         const valid = await schema.validate(req.body)
-        console.log({validError: valid.error})
 
         if (valid.error){
             const inputValidationError = new Error (valid.error.message);

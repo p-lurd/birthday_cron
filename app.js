@@ -7,6 +7,7 @@ const path = require('path');
 const logger = require('./logger');
 const { validateUserCreation } = require('./users/user.middleware');
 const { createUser } = require('./users/user.controller');
+const sendBirthday = require('./cronHandler')
 
 db.connect();
 
@@ -33,7 +34,7 @@ app.post('/register', validateUserCreation, createUser)
 
 
 // function to send birthday wishes
-// sendBirthday();
+sendBirthday();
 
 
 
