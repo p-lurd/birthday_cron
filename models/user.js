@@ -7,6 +7,7 @@ const User = new Schema ({
     _id: {
         type: String,
         required: true,
+        unique: true,
         default: uuidv4()
     },
     username: {
