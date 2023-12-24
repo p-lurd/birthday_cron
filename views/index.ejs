@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="main_signup">
-        <% if (UserError) { %>
-            <p class="error"><%= UserError.message %></p>
+        <% if (UserMessage) { %>
+            <p class="error"><%= UserMessage.message %></p>
         <% } %> 
         <h2>want us to wish you <br>on your birthday?</h2>
         <form action="/register" method="POST">

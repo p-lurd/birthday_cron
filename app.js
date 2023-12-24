@@ -23,9 +23,9 @@ app.set('views' , __dirname + '/views');
 
 app.get('/', function(req, res, next){
     const error = req.query.error;
-    const UserError = error ? new Error(decodeURIComponent(error)) : null;
-    res.locals.UserError = UserError;
-    res.render('index', {UserError});
+    const UserMessage = error ? new Error(decodeURIComponent(error)) : null;
+    res.locals.UserMessage = UserMessage;
+    res.render('index', {UserMessage});
 });
 app.post('/register', validateUserCreation, createUser)
 
